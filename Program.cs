@@ -87,7 +87,7 @@ namespace PrimeNrApp
          *  Find the prime numbers between 2 numbers.
          *  takes two string as search parameters.
          */
-        public static string CountPrimes(string start, string end)
+        public static string CountPrimes(string start, string end) 
         {
             int sayac = 0;
             string primes = "";

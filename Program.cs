@@ -65,9 +65,19 @@ namespace PrimeNrApp
                 return true;
             }
 
-            if (n <= 1 || n % 2 == 0 || n % 3 == 0)
+            if (n <= 1)
             {
                 Console.WriteLine("false");
+                return false;
+            }
+            if(n % 2 == 0)
+            {
+                Console.WriteLine("false. it is divisible by 2");
+                return false;
+            }
+            if(n % 3 == 0)
+            {
+                Console.WriteLine("false. it is divisible by 3");
                 return false;
             }
 
@@ -75,7 +85,7 @@ namespace PrimeNrApp
             {
                 if (n % i == 0 || n % (i + 2) == 0)
                 {
-                    Console.WriteLine("false");
+                    Console.WriteLine("false. it is divisible by " + i);
                     return false;
                 }
             }

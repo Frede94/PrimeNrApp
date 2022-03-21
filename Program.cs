@@ -83,9 +83,14 @@ namespace PrimeNrApp
 
             for (int i = 5; i * i <= n; i += 6)
             {
-                if (n % i == 0 || n % (i + 2) == 0)
+                if (n % i == 0)
                 {
                     Console.WriteLine("false. it is divisible by " + i);
+                    return false;
+                }
+                if(n % (i + 2) == 0)
+                {
+                    Console.WriteLine("false. it is divisible by " + (i+2));
                     return false;
                 }
             }

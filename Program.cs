@@ -27,7 +27,7 @@ namespace PrimeNrApp
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine("Ikke et nr",e);
+                        Console.WriteLine(e);
                     }
                 }
                 else if (choice == "b")
@@ -44,7 +44,7 @@ namespace PrimeNrApp
                     }
                     catch(Exception f)
                     {
-                        Console.WriteLine("TEMP Wrong", f);
+                        Console.WriteLine(f);
                     }
                 }
 
